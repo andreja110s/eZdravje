@@ -6,3 +6,7 @@
     float:left;
     margin-left: 13px
 }
+
+.poravnaj-seznam-desno {
+    float:right;
+}
