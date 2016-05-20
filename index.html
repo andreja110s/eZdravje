@@ -47,27 +47,27 @@
 					<div class="panel-heading">
 						<div class="row">
 							<div class="poravnaj-seznam"><h4>Vnos podatkov</h4></div>
-							<div class="col-lg-4 col-md-4 col-sm-4" margin-right="10"><select class="form-control input-sm" id="preberiObstojeciVitalniZnak"><option value=""></option><option value="b931580f-2b05-488b-985b-8d9ffb08ad02|2014-11-21T11:40Z|185|80.0|36.50|118|92|98|medicinska sestra Smrketa">Ata Smrk</option></select></div>
+							<div class="col-lg-4 col-md-4 col-sm-4 poravnaj-seznam-desno" margin-right="10"><select class="form-control input-sm" id="preberiObstojeciVitalniZnak"><option value=""></option><option value="b931580f-2b05-488b-985b-8d9ffb08ad02|2014-11-21T11:40Z|185|80.0|36.50|118|92|98|medicinska sestra Smrketa">Ata Smrk</option></select></div>
 						</div>
 					</div>
 					<div class="panel-body">
 						<div style="text-align:left">
 					  Višina:
 				    </div>
-						<input type="text" name="višina" class="poravnaj" id="visina"><br></br>
+						<input type="text" name="višina" class="poravnaj" id="visina"><div class="poravnaj-seznam">cm</div><br></br>
 						
 						<div style="text-align:left">
 					  Teža:
 				    </div>
-						<input type="text" name="teža" class="poravnaj" id="teza"><br></br>
+						<input type="text" name="teža" class="poravnaj" id="teza"><div class="poravnaj-seznam">kg</div><br></br>
 						
 						<div style="text-align:left">
 					  Spol
 				    </div>
-						<select>
+						<select class="poravnaj">
 						  <option value="1">Ženski</option>
 						  <option value="2">Moški</option>
-						</select>
+						</select><br></br>
 						
 						<div style="text-align:left">
 					  Gibanje:
@@ -75,16 +75,11 @@
 				    <div style="text-align:left">
 					  <li>Hoja:
 				    </div>
-						<input type="text" name="hoja" class="poravnaj-seznam" id="hoja"><br></br>
+						<input type="text" name="hoja" class="poravnaj-seznam" id="hoja"><div class="poravnaj-seznam">min</div><br></br>
 						<div style="text-align:left"></li>
 					  <li>Tek:
 				    </div>
-						<input type="text" name="tek" class="poravnaj-seznam" id="tek"></li><br></br>
-						
-						<div style="text-align:left">
-					  Teža:
-				    </div>
-						<input type="text" name="teža" class="poravnaj" id="teza"><br></br>
+						<input type="text" name="tek" class="poravnaj-seznam" id="tek"><div class="poravnaj-seznam">min</div></li><br></br>
 						
 						<div style="text-align:left">
 					  Kaj ste danes pojedli/popili?
@@ -112,7 +107,7 @@
 						<option value="16">Pire krompir</option>
 						<option value="17">Zelenjava</option>
 						</select>
-						<select>
+						<select class="poravnaj-seznam">
 						  <option value="1">1</option>
 						  <option value="2">2</option>
 						  <option value="3">3</option>
@@ -133,7 +128,8 @@
 						  <option value="4">18</option>
 						  <option value="4">19</option>
 						  <option value="4">20</option>
-						</select> Porcij/kosov
+						</select> <div class="poravnaj-seznam">Porcij/kosov</div>
+						<script>dodajPolje</script>
 				  	<br></br>
 				  	
 				  	<div style="text-align:left">
@@ -159,7 +155,7 @@
 						<option value="16">Pire krompir</option>
 						<option value="17">Zelenjava</option>
 						</select>
-						<select>
+						<select class="poravnaj-seznam">
 						  <option value="1">1</option>
 						  <option value="2">2</option>
 						  <option value="3">3</option>
@@ -180,19 +176,23 @@
 						  <option value="4">18</option>
 						  <option value="4">19</option>
 						  <option value="4">20</option>
-						</select> Meric (ena merica - 2dl)
+						</select> <div class="poravnaj-seznam">Meric (ena merica - 2dl)</div>
 				  	<br></br>
 				  	
 				  	<div style="text-align:left">
 					  Kadite?
 				    </div>
-						<select>
+						<select class="poravnaj">
 						  <option value="1">Da</option>
 						  <option value="2">Ne</option>
-						</select>
+						</select><br></br>
 						
-            
-				  	
+						<div style="text-align:left">
+					  Jemljete katero od naslednjih zdravil?
+				    </div>
+						  <input type="Checkbox" name="Inzulin" value="no" class="poravnaj"><div class="poravnaj">Kontracepcijske tablete</div><br>
+							<input type="Checkbox" name="Nekaj" value="yes" class="poravnaj"><div class="poravnaj">Inzulin</div><br>
+							<input type="Checkbox" name="Blabla" value="no" class="poravnaj"><div class="poravnaj">Blabla</div><br>
 				</div>
 			</div>
       </div>
