@@ -38,6 +38,8 @@
   <!-- KONEC: Menujska vrstica na vrhu spletne strani -->
 
   <!-- ZAČETEK: Vsebina aplikacije -->
+  <div class="vrhnje"><h2>Vnos podatkov</h2></div>
+  <div style="line-height:30%;"><br></div>
   <div class="za-besedilo-celotno">
   	<div class="panel-body">
 						<div style="text-align:left" class="za-besedilo-dolzina">
@@ -73,10 +75,10 @@
 						<div style="text-align:left" class="za-besedilo">
 					  Kaj ste danes pojedli/popili?
 				    </div> <div style="line-height:30%;"><br></div>
-				    <div style="text-align:left">
+				    <li><div style="text-align:left">
 					  Jed:
 				    </div> <div style="line-height:30%;"><br></div>
-						<select class="poravnaj" id="hrana">
+						<select class="poravnaj-seznam" id="hrana">
 						<option value="0"></option>
 						<option value="1">Hamburger</option>
 						<option value="2">Krompirček</option>
@@ -118,13 +120,13 @@
 						  <option value="4">19</option>
 						  <option value="4">20</option>
 						</select> <div class="poravnaj-seznam">Porcij/kosov</div>
-						<script>dodajPolje</script>
-				  	<br></br>
+						<script>dodajPolje("hrana")</script>
+				  	<br></br></li>
 				  	
-				  	<div style="text-align:left">
+				  	<li><div style="text-align:left">
 					  Pijača:
 				    </div> <div style="line-height:30%;"><br></div>
-						<select class="poravnaj" id="hrana">
+						<select class="poravnaj-seznam" id="hrana">
 						<option value="0"></option>
 						<option value="1">Ledeni čaj</option>
 						<option value="2">Čaj</option>
@@ -166,7 +168,7 @@
 						  <option value="4">19</option>
 						  <option value="4">20</option>
 						</select> <div class="poravnaj-seznam">Meric (ena merica - 2dl)</div>
-				  	<br></br>
+				  	<br></br></li>
 				  	
 				  	<div style="text-align:left" class="za-besedilo-dolzina">
 					  Kadite?

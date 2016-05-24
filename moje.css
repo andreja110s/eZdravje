@@ -44,3 +44,10 @@
     border: 1px solid purple;
     background-color: #DBADD9;
 }
+
+.vrhnje {
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #ECE9E9;
+    width: 275px;
+}
