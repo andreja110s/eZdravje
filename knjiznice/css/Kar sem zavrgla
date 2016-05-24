@@ -28,3 +28,12 @@
 						<option value='16'>Pire krompir</option>
 						<option value='17'>Zelenjava</option>
 						</select> "
+						
+
+
+<div style="text-align:left" class="za-besedilo-dolgo">
+					  Jemljete katero od naslednjih zdravil?
+				    </div> <div style="line-height:30%;"><br></div>
+						  <input type="Checkbox" name="Kontracepcijske" value="no" class="poravnaj"><div class="poravnaj">Kontracepcijske tablete</div><br>
+							<input type="Checkbox" name="Inzulin" value="yes" class="poravnaj"><div class="poravnaj">Inzulin</div><br>
+							<input type="Checkbox" name="Blabla" value="no" class="poravnaj"><div class="poravnaj">Blabla</div><br>
