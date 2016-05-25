@@ -1,4 +1,4 @@
-function dodajPolje(imeSeznama) {
+/*function dodajPolje(imeSeznama) {
     var seznam= document.getElementById("imeSeznama");
     var karSmoOznacli= seznam.options[seznam.selectedIndex].value;
     if (karSmoOznacli!=0) {                                                     //če je value zadnjega dodanega elementa(hrane ali pijače)!=0
@@ -21,7 +21,6 @@ function dodajPolje(imeSeznama) {
 }
 
 
-/*
 <select class="poravnaj-seznam" id="hrana">
 	<option value="0"></option>
 	<option value="1">Ledeni čaj</option>
@@ -43,3 +42,42 @@ function dodajPolje(imeSeznama) {
 	<option value="17">Zelenjava</option>
 </select>
 */
+
+var dodajVSeznameH= function(event) {
+    var karSmoOznacli= document.getElementById("hrana");
+    var seznam= document.getElementById("seznamHrane");
+    var kolicina= document.getElementById("kolicinaH");
+    
+    var kajSmoDali= seznam.options[seznam.selectedIndex].text;
+    var kaj= seznam.options[seznam.selectedIndex].value;
+    var kolikoSmoDali= kolicina.options[kolicina.selectedIndex].value;
+    var napis= kolicina+"x   "+karSmoOznacli;
+    var z=false;
+    var nz=false;
+    var s=false;
+    
+    if (kaj.equals(1) || kaj.equals(2) || kaj.equals(5) || kaj.equals(9) || kaj.equals(10) || kaj.equals(12)) {
+        nz=true;
+    }
+    
+    if (kaj.equals(14) || kaj.equals(15)) {
+        s=true;
+    }
+    
+    if (kaj.equals(3) || kaj.equals(7) || kaj.equals(17)) {
+        z=true;
+    }
+    
+    if (!kajSmoDali.equals("0")) {
+        var vrni= document.createElement("div");
+        vrni.setAttribute("jed", karSmoOznacli);
+        vrni.setAttribute("kolicina", "1");
+        vrni.setAttribute("zdravo", z);
+        vrni.setAttribute("sladko", s);
+        vrni.setAttribute("nezdravo", nz);
+    }
+}
+
+
+
+

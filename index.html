@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>eZdravje :: 4. DN :: OIS 2015/2016</title>
   <link href="knjiznice/css/bootstrap.min.css" rel="stylesheet">
-  <link href="moje.css" rel="stylesheet">
+  <link href="moje.css" rel="stylesheet" type="text/css">
   <style>
     body {padding-top: 70px;}
   </style>
@@ -79,26 +79,26 @@
 					  Jed:
 				    </div> <div style="line-height:30%;"><br></div>
 						<select class="poravnaj-seznam" id="hrana">
-						<option value="0"></option>
-						<option value="1">Hamburger</option>
-						<option value="2">Krompirček</option>
-						<option value="3">Sadje</option>
-						<option value="4">Testenine/lazanja</option>
-						<option value="5">Pohano meso</option>
-						<option value="6">Goveja juha</option>
-						<option value="7">Zelenjavna juha</option>
-						<option value="8">Gobova juha</option>
-						<option value="9">Čips</option>
-						<option value="10">Pica</option>
-						<option value="11">Rižota</option>
-						<option value="12">Pečene piščančje perutničke</option>
-						<option value="13">Piščančji file</option>
-						<option value="14">Sladoled</option>
-						<option value="15">Torta</option>
-						<option value="16">Pire krompir</option>
-						<option value="17">Zelenjava</option>
+							<option value="0"></option>
+							<option value="1">Hamburger</option>
+							<option value="2">Krompirček</option>
+							<option value="3">Sadje</option>
+							<option value="4">Testenine/lazanja</option>
+							<option value="5">Pohano meso</option>
+							<option value="6">Goveja juha</option>
+							<option value="7">Zelenjavna juha</option>
+							<option value="8">Gobova juha</option>
+							<option value="9">Čips</option>
+							<option value="10">Pica</option>
+							<option value="11">Rižota</option>
+							<option value="12">Pečene piščančje perutničke</option>
+							<option value="13">Piščančji file</option>
+							<option value="14">Sladoled</option>
+							<option value="15">Torta</option>
+							<option value="16">Pire krompir</option>
+							<option value="17">Zelenjava</option>
 						</select>
-						<select class="poravnaj-seznam">
+						<select class="poravnaj-seznam" id="kolicinaH">
 						  <option value="1">1</option>
 						  <option value="2">2</option>
 						  <option value="3">3</option>
@@ -119,34 +119,27 @@
 						  <option value="4">18</option>
 						  <option value="4">19</option>
 						  <option value="4">20</option>
-						</select> <div class="poravnaj-seznam">Porcij/kosov</div>
-						<script>dodajPolje("hrana")</script>
-				  	<br></br></li>
+						</select> <div class="poravnaj-seznam">Porcij/kosov</div> <button class="button" id="dodajH">Dodaj</button>
+				  	<br></br>
+				  	<div id="seznamHrane"></div>
+				  	</li>
 				  	
 				  	<li><div style="text-align:left">
 					  Pijača:
 				    </div> <div style="line-height:30%;"><br></div>
-						<select class="poravnaj-seznam" id="hrana">
-						<option value="0"></option>
-						<option value="1">Ledeni čaj</option>
-						<option value="2">Čaj</option>
-						<option value="3">Energijska pijača</option>
-						<option value="4">Voda</option>
-						<option value="5">Sok</option>
-						<option value="6">Coca cola</option>
-						<option value="7">Mleko</option>
-						<option value="8">Kava</option>
-						<option value="9">Kakav</option>
-						<option value="10">Pica</option>
-						<option value="11">Rižota</option>
-						<option value="12">Pečene piščančje perutničke</option>
-						<option value="13">Piščančji file</option>
-						<option value="14">Sladoled</option>
-						<option value="15">Torta</option>
-						<option value="16">Pire krompir</option>
-						<option value="17">Zelenjava</option>
+						<select class="poravnaj-seznam" id="pijača">
+							<option value="0"></option>
+							<option value="1">Ledeni čaj</option>
+							<option value="2">Čaj</option>
+							<option value="3">Energijska pijača</option>
+							<option value="4">Voda</option>
+							<option value="5">Sok</option>
+							<option value="6">Coca cola</option>
+							<option value="7">Mleko</option>
+							<option value="8">Kava</option>
+							<option value="9">Kakav</option>
 						</select>
-						<select class="poravnaj-seznam">
+						<select class="poravnaj-seznam" id="kolicinaP">
 						  <option value="1">1</option>
 						  <option value="2">2</option>
 						  <option value="3">3</option>
@@ -167,7 +160,7 @@
 						  <option value="4">18</option>
 						  <option value="4">19</option>
 						  <option value="4">20</option>
-						</select> <div class="poravnaj-seznam">Meric (ena merica - 2dl)</div>
+						</select> <div class="poravnaj-seznam">Meric (ena merica - 2dl)</div> <button class="button" id="dodajH">Dodaj</button>
 				  	<br></br></li>
 				  	
 				  	<div style="text-align:left" class="za-besedilo-dolzina">
